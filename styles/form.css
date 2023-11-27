@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Kaushan+Script&family=Poppins:ital,wght@1,300&display=swap');
+
+:root {
+    --clr-white: #fff;
+    --clr-black: #000;
+    --vlr-plum: #ee82ee;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/bg-form.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gainsboro;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overall-container {
+    padding-bottom: 2rem;
+}
+
+/* nav bar */
+header {
+    background-color: var(--clr-white);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+header span {
+    color: var(--vlr-plum);
+}
+
+.intro-head a {
+    text-decoration: none;
+    color: var(--clr-black);
+
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--clr-white);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+nav {
+    margin: 2rem auto 0;
+    max-width: 305px;
+}
+
+nav ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.list-item1 {
+    background-color: var(--clr-white);
+    width: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.list-item2 {
+    width: 50%;
+}
+
+li a {
+    color: var(--vlr-black);
+    text-decoration: none;
+}
+
+/* container */
+.hero-head,
+.hero-intro {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.submit,
+.submit-form,
+form input {
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: transparent;
+    outline: 0;
+    font-size: 1rem;
+}
+
+.password {
+    position: relative
+}
+
+.password img {
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--vlr-plum);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit img {
+    width: 9%;
+}
+
+.submit a {
+    text-decoration: none;
+    color: var(--clr-black);
+    font-weight: 600;
+}
+
+.divider {
+    position: relative;
+    color: var(--vlr-black);
+    text-align: center;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    height: .5px;
+    width: 95px;
+    background-color: var(--clr-black);
+    left: 1rem;
+    top: .6rem;
+
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    height: .5px;
+    width: 95px;
+    background-color: var(--clr-black);
+    right: 1rem;
+    top: .6rem;
+
+}
+
+/* form */
+form a {
+    color: var(--clr-black);
+}
+
+form p {
+    text-align: center;
+
+}
+
+.submit-form {
+    background-color: var(--vlr-plum);
+    color: var(--clr-white);
+    font-weight: 600;
+    border: 0;
+    font-size: 1.1rem;
+}
+
+.submit-form-a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.forgot-pwd {
+    color: var(--vlr-plum);
+    text-align: center;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+#error-msg {
+    color: #f00;
+    text-align: left;
+    padding-bottom: 1rem;
+
+}
+
+/* .hide{
+    display: none;
+} */
+.box {
+    display: none;
+}
+
+.box h1 {
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+}
+
+@media only screen and (min-width: 760px){
+    .container {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    nav {
+        max-width: 500px;
+    }
+
+    .login-options {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .divider::before {
+        width: 150px;
+        left: 4rem;
+        top: .8rem;
+
+    }
+
+    .divider::after {
+        width: 150px;
+        right: 4rem;
+        top: .8rem;
+
+    }
+
+    .box {
+        display: block;
+        max-width: 180px;
+        background-color: var(--clr-white);
+        padding: .6rem;
+        border-radius: 5px;
+        position: absolute;
+        top: 15rem;
+        right: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 540px) {
+    nav {
+        max-width: 298px;
+    }
+
+    .container {
+        max-width: 300px;
+    }
+}
+/* TODO screen sizes 280 768 820 912 */

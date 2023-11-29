@@ -266,7 +266,7 @@ const offering = [
   {
     id: 1,
     h3: "Knowledge sharing :",
-    p: "Acess a wealth of knowledge shared by developers on th same journey as youreslf, learn about lates technologies and best practices"
+    p: "Acess a wealth of knowledge shared by developers on th same journey as youreslf, learn about lates technologies and best practices."
   },
   {
     id: 2,
@@ -276,17 +276,17 @@ const offering = [
   {
     id: 3,
     h3: "Networking:",
-    p: "Build meaningful connections with peers, industry leads. Networking is a vital part of career growth, and we provide ample opportunites to connect with the rigth people"
+    p: "Build meaningful connections with peers, industry leads. Networking is a vital part of career growth, and we provide ample opportunites to connect with the rigth people."
   },
   {
     id: 4,
     h3: "Coding Challenges :",
-    p: "Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities"
+    p: "Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities."
   },
   {
     id: 5,
     h3: "Accountability Partner :",
-    p: "Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities"
+    p: "Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities."
   },
 
 ];
@@ -334,33 +334,43 @@ const testimonials =[
 ];
 
    
-const button =  `<button class="button">Click me!</button>`
 const header = `<h2 class="testimony-h2">What Our Clients Say</h2>`;
-randomCard.insertAdjacentHTML("afterbegin", header);
-randomCard.insertAdjacentHTML('afterend', button)
-//RANDOMNESS FO R THE QUOTES 
-randomNum = Math.floor(Math.random() * testimonials.length)
-const randomText  = testimonials[randomNum]
- function testimony(){
-  const html =
-` <div class="inner-random">
-    <img src=${testimonials[0].slideImg} class='r-img' alt="clients">
-     <h3 class='r-h3'>${testimonials[0].slideName}</h3>
-     <p class='r-p'>${testimonials[0].slideText}</p>
-</div> `
-return randomCard.innerHTML += html;
+const carouselContainer = document.querySelector('#carousel-container')
+carouselContainer.insertAdjacentHTML("afterbegin", header);
+const carouselInner = document.querySelector('.carousel-inner');
+
+function slider(){
+  let html = ''
+  testimonials.forEach(testimony =>{ 
+    const {slideImg, slideName, slideText} = testimony 
+    html += ` 
+     <div class="carousel-slider">
+     <img src=${slideImg} alt="">
+     <h3>${slideName}</h3>
+     <p>${slideText}</p>
+   </div>
+`
+})
+return carouselInner.innerHTML = html;
 }
-testimony()
 
+testimonials.map(slider);
 
-const randomBtn = document.querySelector('.button')
+function movingSliders(){
+  const innerContainerCarousel = document.querySelector('#inner-container');
+  const btnLeft = innerContainerCarousel.querySelector('.left-arr');
+  const btnRight = innerContainerCarousel.querySelector('.right-arr');
+  let index = 0;
+  btnLeft.addEventListener('click', function(){
+    index = index > 0 ? index -1 : 0;
+    carouselInner.style.transform = `translate(${index *-33}%)`
+  })
   
+  btnRight.addEventListener('click', function(){
+    index= index < 2 ? index + 1: 2;
+    carouselInner.style.transform = `translate(${index *-33}%)`
 
-randomBtn.addEventListener('click', function(){
-const img = document.querySelector('.r-img')
-img.src = randomText.slideImg;
-const h3 = document.querySelector('.r-h3')
-h3.textContent = randomText.slideName;
-const p = document.querySelector('.r-p')
-p.textContent = randomText.slideText;
-});
+  })
+}
+
+movingSliders()

@@ -37,6 +37,9 @@ const redirectToHomePage = function(){
     }
 }
 submitBtn.addEventListener('click', redirectToHomePage)
+submitBtn.addEventListener('keydown', function(e){
+    if(e.key === 'Enter')redirectToHomePage()
+})
 
 passwordVisible.addEventListener('click', function(){
     if(password.type === 'password'){

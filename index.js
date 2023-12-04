@@ -37,7 +37,7 @@ const redirectToHomePage = function(){
     }
 }
 submitBtn.addEventListener('click', redirectToHomePage)
-submitBtn.addEventListener('keydown', function(e){
+submitBtn.addEventListener('keyup', function(e){
     if(e.key === 'Enter')redirectToHomePage()
 })
 
@@ -48,7 +48,6 @@ passwordVisible.addEventListener('click', function(){
     }else{
         password.setAttribute('type', 'password')
         passwordVisible.setAttribute('src', "./images/visible.png");
-        
     }
 })
 

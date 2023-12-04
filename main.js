@@ -208,6 +208,7 @@ const sectionOffer = document.querySelector(".offer");
 const signUp = document.querySelector(".sign-up");
 const footerSpan = document.querySelector(".footer-span");
 const randomCard = document.querySelector(".random-card");
+const allSections = document.querySelectorAll('.section-observer');
 
 
 const date = new Date();
@@ -222,13 +223,12 @@ function mobileNav() {
   for (const list of navList) {
     list.classList.toggle("mobile-list-padding");
   }
-
   signUp.classList.toggle("sign-up_color");
 }
 
 menu.addEventListener("click", mobileNav);
 // search pair
-
+ 
 //  rendering the cards
 function generateElements(){
   let template = '';
@@ -369,8 +369,25 @@ function movingSliders(){
   btnRight.addEventListener('click', function(){
     index= index < 2 ? index + 1: 2;
     carouselInner.style.transform = `translate(${index *-33}%)`
-
   })
 }
 
-movingSliders()
+movingSliders();
+
+function sectionObserve(entries, observer){
+  const[entry] = entries
+  if(!entry.isIntersecting)return;
+  entry.target.classList.remove('section--hidden')
+  observer.unobserve(entry.target)
+  
+}
+
+const sectionObserver  = new IntersectionObserver(sectionObserve, {
+  threshold:0.15,
+  root: null
+})
+
+allSections.forEach(section =>{
+  sectionObserver.observe(section)
+  section.classList.add('section--hidden')
+})

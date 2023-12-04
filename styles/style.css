@@ -16,6 +16,13 @@ body {
     font-family: 'Poppins', sans-serif
 }
 
+.section-observer{
+transition:transform 500ms, opacity 500ms;
+}
+.section--hidden{
+    transform: translateY(-8rem);
+    opacity: 0;
+}
 /* nav-bar */
 
 .header {

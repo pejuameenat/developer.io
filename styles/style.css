@@ -17,7 +17,8 @@ body {
 }
 
 .section-observer{
-transition:transform 500ms, opacity 500ms;
+ transition:transform 500ms, opacity 500ms;
+ 
 }
 .section--hidden{
     transform: translateY(-8rem);
@@ -395,6 +396,7 @@ p {
 .carousel-slider{
     flex-basis: 100%;
     margin: 1rem auto;
+    transition: all 500ms;
 }
 .carousel-slider p, h3{
     text-align: center;

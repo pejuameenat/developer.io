@@ -95,6 +95,9 @@ li a {
     text-align: center;
     padding: 1rem 0;
 }
+.submit:hover{
+    background-color: #f0efef;
+}
 
 .submit,
 .submit-form,
@@ -108,8 +111,15 @@ form input {
     background-color: transparent;
     outline: 0;
     font-size: 1rem;
+    transition: 400ms ease-in;
 }
 
+.submit-form:hover{
+    background-color: #c230c2;
+}
+.forgot-pwd:hover{
+    color: #c230c2;
+}
 .password {
     position: relative
 }

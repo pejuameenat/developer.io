@@ -209,6 +209,7 @@ const signUp = document.querySelector(".sign-up");
 const footerSpan = document.querySelector(".footer-span");
 const randomCard = document.querySelector(".random-card");
 const allSections = document.querySelectorAll('.section-observer');
+const nav = document.querySelector('nav');
 
 
 const date = new Date();
@@ -229,6 +230,12 @@ function mobileNav() {
 menu.addEventListener("click", mobileNav);
 // search pair
  
+nav.addEventListener('click', function(e){
+  if(e.target.contains('nav-link')){
+    id = e.target.getAttribute('href')
+    document.querySelector(id).scrollIntoView({behavior: 'smooth'})
+  }
+})
 //  rendering the cards
 function generateElements(){
   let template = '';
@@ -362,12 +369,12 @@ function movingSliders(){
   const btnRight = innerContainerCarousel.querySelector('.right-arr');
   let index = 0;
   btnLeft.addEventListener('click', function(){
-    index = index > 0 ? index -1 : 0;
+    index = index > 0 ? index -1 : 2;
     carouselInner.style.transform = `translate(${index *-33}%)`
   })
   
   btnRight.addEventListener('click', function(){
-    index= index < 2 ? index + 1: 2;
+    index= index < 2 ? index + 1: 0;
     carouselInner.style.transform = `translate(${index *-33}%)`
   })
 }

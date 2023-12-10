@@ -258,7 +258,6 @@ button:hover{
     transition: 0.8s ease;
     padding: 1rem;
     border-radius: 5px;
-    border:  2px solid blue;
 }
 
 .grid-item img {

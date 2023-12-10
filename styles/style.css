@@ -36,7 +36,6 @@ body {
     padding: .9rem 1rem;
     background-color: var(--clr-white);
     box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.3);
-
 }
 
 .intro-head {
@@ -119,7 +118,7 @@ nav {
 
 /* display image */
 .display-image {
-    width: 50px;
+    width: 30px;
     border-radius: 50%;
     margin-right: 2rem;
     border: 2px solid var(--clr-plum);
@@ -131,8 +130,7 @@ nav {
 }
 
 .container {
-    width: 80%;
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -155,7 +153,6 @@ nav {
     height: 100px;
     border-radius: 50%;
     display: block;
-
 }
 
 .invert-out:nth-child(even) {
@@ -170,7 +167,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-
+    padding: .3rem;
 }
 
 /* footer */
@@ -216,9 +213,7 @@ button:hover{
     border-radius: 50%;
     position: absolute;
     top: -3rem;
-    /* transform: translate(-50%, -50%); */
     left: 40%;
-
 }
 
 .overlap img {
@@ -227,13 +222,11 @@ button:hover{
 
 /* pair.css */
 #container {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
     margin: 0 auto;
 }
 
 /*   */
-
 .inputs {
     max-width: 400px;
     margin: 1rem auto;
@@ -265,7 +258,7 @@ button:hover{
     transition: 0.8s ease;
     padding: 1rem;
     border-radius: 5px;
-
+    border:  2px solid blue;
 }
 
 .grid-item img {
@@ -313,7 +306,7 @@ button:hover{
 
 .purple {
     background-color: var(--clr-plum);
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 1.5rem 0;
     min-height: 100vh;
 }
@@ -325,8 +318,6 @@ button:hover{
     padding: 1rem;
     margin: 1rem auto;
     min-height: inherit;
-    width: 95%;
-
 }
 
 .offer-container h2 {
@@ -389,7 +380,7 @@ p {
 .carousel-inner{
     height: 100%;
     display: flex;
-    width: 300%; /*width of the children multiplied by their number in this case just three children*/
+    width: 300%;  
     transition: all 300ms;
 }
 
@@ -502,7 +493,17 @@ footer p , .footer-wrapper a{
         top: 1.5rem;
         background-color: var(--clr-white);
     }
-
+    .container {
+        width: 80%;
+        max-width: 1100px
+    }
+    #container{
+        width: 80%;
+        max-width: 1000px;
+    }
+    .offer-container{
+        width: 95%;
+    }
     .languages {
         padding: .9rem;
     }

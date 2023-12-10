@@ -56,11 +56,10 @@ body {
 nav {
     padding: 1rem .2rem 1rem 1rem;
     width: 35%;
-    /* border:2px solid red; */
 }
 
 .menu {
-    width: 10%;
+    width: 14%;
     float: right;
 }
 
@@ -134,9 +133,7 @@ nav {
     margin: 0 auto;
 }
 
-.grid-container img {
-    border: 4px solid var(--clr-plum);
-}
+ 
 
 .text {
     text-align: center;
@@ -153,6 +150,7 @@ nav {
     height: 100px;
     border-radius: 50%;
     display: block;
+    border: 4px solid var(--clr-plum);
 }
 
 .invert-out:nth-child(even) {
@@ -166,8 +164,7 @@ nav {
 .item-one {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding: .3rem;
+    padding-left: 2rem;
 }
 
 /* footer */
@@ -542,8 +539,10 @@ footer p , .footer-wrapper a{
     .item-one {
         grid-column: 1/2;
         grid-row: 1/2;
-
+        margin: 0 auto;
+        padding: .3rem;
     }
+
 
     .item-two {
         grid-column: 2/3;
@@ -621,8 +620,8 @@ footer p , .footer-wrapper a{
     /* mainStyle.css */
     @media only screen and (min-width:280px) and (max-width:380px) {
         .grid-container img {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
         }
     }
 

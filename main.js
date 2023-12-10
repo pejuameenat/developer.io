@@ -1,3 +1,5 @@
+'use strict'
+
 const information = [
   {
     id: 1,
@@ -5,7 +7,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Javascript",
-    overlay: "Pair with Olivia",
+    overlay: "Pair with Olivia"
   },
   {
     id: 2,
@@ -13,7 +15,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Java",
-    overlay: "Pair with Jessica",
+    overlay: "Pair with Jessica"
   },
   {
     id: 3,
@@ -21,7 +23,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Swift",
-    overlay: "Pair with Sam",
+    overlay: "Pair with Sam"
   },
   {
     id: 4,
@@ -29,7 +31,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Ruby",
-    overlay: "Pair with Wade",
+    overlay: "Pair with Wade"
   },
   {
     id: 5,
@@ -37,7 +39,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Python",
-    overlay: "Pair with Ember",
+    overlay: "Pair with Ember"
   },
   {
     id: 6,
@@ -45,7 +47,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Javascript",
-    overlay: "Pair with Lizabeth",
+    overlay: "Pair with Lizabeth"
   },
   {
     id: 7,
@@ -53,7 +55,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Java",
-    overlay: "Pair with Rachael",
+    overlay: "Pair with Rachael"
   },
   {
     id: 8,
@@ -61,7 +63,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Javascript",
-    overlay: "Pair with Jude",
+    overlay: "Pair with Jude"
   },
   {
     id: 9,
@@ -69,7 +71,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Python",
-    overlay: "Pair with Ashfa",
+    overlay: "Pair with Ashfa"
   },
   {
     id: 10,
@@ -77,7 +79,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Java",
-    overlay: "Pair with Trisha",
+    overlay: "Pair with Trisha"
   },
   {
     id: 11,
@@ -85,7 +87,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "C",
-    overlay: "Pair with Will",
+    overlay: "Pair with Will"
   },
   {
     id: 12,
@@ -93,7 +95,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "PHP",
-    overlay: "Pair with Aishat",
+    overlay: "Pair with Aishat"
   },
   {
     id: 13,
@@ -101,7 +103,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Javascript",
-    overlay: "Pair with Sumi",
+    overlay: "Pair with Sumi"
   },
   {
     id: 14,
@@ -109,7 +111,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Java",
-    overlay: "Pair with Tobi",
+    overlay: "Pair with Tobi"
   },
   {
     id: 15,
@@ -117,7 +119,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "MySql",
-    overlay: "Pair with Sammy",
+    overlay: "Pair with Sammy"
   },
   {
     id: 16,
@@ -125,7 +127,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "C++",
-    overlay: "Pair with Wends",
+    overlay: "Pair with Wends"
   },
   {
     id: 17,
@@ -133,7 +135,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Python",
-    overlay: "Pair with Dan",
+    overlay: "Pair with Dan"
   },
   {
     id: 18,
@@ -141,7 +143,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Go",
-    overlay: "Pair with Gift",
+    overlay: "Pair with Gift"
   },
   {
     id: 19,
@@ -149,7 +151,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Kotlin",
-    overlay: "Pair with Coker",
+    overlay: "Pair with Coker"
   },
   {
     id: 20,
@@ -157,7 +159,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Kotlin",
-    overlay: "Pair with Rufus",
+    overlay: "Pair with Rufus"
   },
   {
     id: 21,
@@ -165,7 +167,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "/images/github-1.png",
     language: "HTML",
-    overlay: "Pair with Maisha",
+    overlay: "Pair with Maisha"
   },
   {
     id: 22,
@@ -173,7 +175,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "HTML",
-    overlay: "Pair with Bernie",
+    overlay: "Pair with Bernie"
   },
   {
     id: 23,
@@ -181,7 +183,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "Kotlin",
-    overlay: "Pair with Dan",
+    overlay: "Pair with Dan"
   },
   {
     id: 24,
@@ -189,7 +191,7 @@ const information = [
     imageTwo: "./images/linkedin.png",
     imageThree: "./images/github-1.png",
     language: "PHP",
-    overlay: "Pair with Israel",
+    overlay: "Pair with Israel"
   },
 ];
 
@@ -248,7 +250,7 @@ function generateElements(){
         <div class="overlay">${overlay}
           <div class="inner-img">
              <img src=${imageTwo}  alt="linkedIn"/>
-             <img src=${imageThree} alt="github">
+             <img src=${imageThree} alt="github"/>
           </div>
        </div>${language}
      </div>`;
@@ -288,7 +290,7 @@ const offering = [
   {
     id: 4,
     h3: "Coding Challenges :",
-    p: "Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities."
+    p: "Sharpen your skills and have fun solving a coding challenge with a peer to test your abilities."
   },
   {
     id: 5,
@@ -342,7 +344,7 @@ const testimonials =[
 
    
 const header = `<h2 class="testimony-h2">What Our Clients Say</h2>`;
-const carouselContainer = document.querySelector('#carousel-container')
+const carouselContainer = document.querySelector('#carousel-container');
 carouselContainer.insertAdjacentHTML("afterbegin", header);
 const carouselInner = document.querySelector('.carousel-inner');
 
@@ -352,7 +354,7 @@ function slider(){
     const {slideImg, slideName, slideText} = testimony 
     html += ` 
      <div class="carousel-slider">
-     <img src=${slideImg} alt="">
+     <img src=${slideImg} alt="office worker image"/>
      <h3>${slideName}</h3>
      <p>${slideText}</p>
    </div>
@@ -382,11 +384,10 @@ function movingSliders(){
 movingSliders();
 
 function sectionObserve(entries, observer){
-  const[entry] = entries
+  const[entry] = entries;
   if(!entry.isIntersecting)return;
-  entry.target.classList.remove('section--hidden')
-  observer.unobserve(entry.target)
-  
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
 }
 
 const sectionObserver  = new IntersectionObserver(sectionObserve, {
@@ -395,6 +396,6 @@ const sectionObserver  = new IntersectionObserver(sectionObserve, {
 })
 
 allSections.forEach(section =>{
-  sectionObserver.observe(section)
-  section.classList.add('section--hidden')
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
 })

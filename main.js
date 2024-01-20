@@ -79,18 +79,16 @@ function generateElements(){
 generateElements()
 // pair.js
 
-sectionOffer.innerHTML += offering.map(function (offer) {
+sectionOffer.innerHTML += offering.map(function(offer) {
   const { h3, p } = offer;
   return `
-    <ul>
         <ul>
             <li>
                 <h3>${h3}</h3>
-                 <p> ${p}</p> 
+                 <p>${p}</p> 
             </li>
         </ul>
-    </ul>
-`;
+`
 });
 
    

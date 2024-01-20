@@ -16,9 +16,9 @@ const submitBtn  = document.querySelector(".submit-btn");
 const SubmitFormLink = document.querySelector(".submit-form-a");
 const username = document.querySelector(".username");
 const password = document.querySelector(".pword");
-const errorMsg = document.getElementById("error-msg")
-const passwordVisible = document.querySelector(".visible")
-const image = document.querySelector('.display-image')
+const errorMsg = document.getElementById("error-msg");
+const passwordVisible = document.querySelector(".visible");
+const image = document.querySelector('.display-image');
 
 
 const createUsername = function(accs){

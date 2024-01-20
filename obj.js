@@ -197,25 +197,25 @@
  export const offering = [
    {
      id: 1,
-     h3: 'Project Collaboration And Knowledge :',
-     p: ' Find like minded developers to collaborate on exciting projects, whether you have an idea or want to contribute your skills, theres a project waiting for you.',
+     h3: 'Project Collaboration And Knowledge',
+     p: ' Find like minded developers to collaborate on exciting projects, whether you have an idea or want to contribute your skills, theres a project waiting for you.'
    },
    {
      id: 2,
-     h3: 'Networking:',
-     p: 'Build meaningful connections with peers, industry leads. Networking is a vital part of career growth, and we provide ample opportunites to connect with the rigth people.',
+     h3: 'Networking',
+     p: 'Build meaningful connections with peers, industry leads. Networking is a vital part of career growth, and we provide ample opportunites to connect with the rigth people.'
    },
    {
      id: 3,
-     h3: 'Coding Challenges :',
-     p: 'Sharpen your skills and have fun solving a coding challenge with a peer to test your abilities.',
+     h3: 'Coding Challenges',
+     p: 'Sharpen your skills and have fun solving a coding challenge with a peer to test your abilities.'
    },
    {
      id: 4,
-     h3: 'Accountability Partner :',
-     p: 'Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities.',
+     h3: 'Accountability Partner',
+     p: 'Sharpen your skills and have fun solving a coding challenge with a peer to test  your abilities.'
    },
- ]
+ ];
 
 
 export const testimonials = [
@@ -225,7 +225,7 @@ export const testimonials = [
     slideName: 'Jane Doe',
     slideText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolorem
     eos rerum voluptas laboriosam, velit error eligendi Dolore nulla
-    doloremque commodi`,
+    doloremque commodi`
   },
 
   {
@@ -234,13 +234,13 @@ export const testimonials = [
     slideName: 'Devin Moore',
     slideText: `Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolorem
     "eos rerum voluptas laboriosam, velit error eligendi Dolore nulla"
-    "doloremque commodi`,
+    "doloremque commodi`
   },
 
   {
     id: 3,
     slideImg: './images/men2.jpg',
     slideName: 'Jerry Davis',
-    slideText: `Signing up on this platform was the best decision I made for my learning journey I got to connect and make an accountability partner for myself. Thank you Developer.io`,
+    slideText: `Signing up on this platform was the best decision I made for my learning journey I got to connect and make an accountability partner for myself. Thank you Developer.io`
   },
-]
+];

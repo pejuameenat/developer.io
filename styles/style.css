@@ -233,7 +233,9 @@ button:hover {
 
 .overlap img {
     max-width: 100%;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -456,13 +458,13 @@ footer h4 {
 
 .footer-a {
     display: block;
-    padding: 1rem;
+    padding:.8rem 1rem;
     border-radius: 25px;
     background-color: var(--clr-plum);
-    width: 300px;
+    width: 350px;
     text-decoration: none;
     color: var(--clr-black);
-    margin: 1rem auto;
+    margin: 3rem auto;
     text-align: center;
     font-size: 1.2rem;
 }

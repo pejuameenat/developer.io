@@ -128,11 +128,11 @@ operationsTabContainer.addEventListener('click', function (e) {
 })
 
 const header = `<h2 class="testimony-h2">What Our Clients Say</h2>`
-const carouselContainer = document.querySelector('#carousel-container')
-carouselContainer.insertAdjacentHTML('afterbegin', header)
+const carouselContainer = document.querySelector('#carousel-container');
+carouselContainer.insertAdjacentHTML('afterbegin', header);
+const carouselInner = document.querySelector('.carousel-inner');
 
 function slider() {
-  const carouselInner = document.querySelector('.carousel-inner')
   let html = ''
   testimonials.forEach((testimony) => {
     const { slideImg, slideName, slideText } = testimony
@@ -156,6 +156,7 @@ function movingSliders() {
   let index = 0
   btnLeft.addEventListener('click', function () {
     index = index > 0 ? index - 1 : 2
+    console.log(index);
     carouselInner.style.transform = `translate(${index * -33}%)`
   })
 

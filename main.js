@@ -7,7 +7,7 @@ const logo = document.querySelector('.intro-head');
 const image = document.querySelector('.display-image');
 const input = document.querySelector('.input');
 const cardContainer = document.getElementById('grid-container');
-const sectionOffer = document.querySelector('.offer')
+const sectionOffer = document.querySelector('.offer');
 const signUp = document.querySelector('.sign-up');
 const footerSpan = document.querySelector('.footer-span');
 const allSections = document.querySelectorAll('.section-observer');
@@ -15,6 +15,8 @@ const nav = document.querySelector('nav');
 const operationsTabContainer = document.querySelector(
   '.operations__tab-container'
 );
+const carouselInner = document.querySelector('.carousel-inner');
+
 
 const date = new Date()
 const year = date.getFullYear()
@@ -128,9 +130,8 @@ operationsTabContainer.addEventListener('click', function (e) {
 })
 
 const header = `<h2 class="testimony-h2">What Our Clients Say</h2>`
-const carouselContainer = document.querySelector('#carousel-container');
-carouselContainer.insertAdjacentHTML('afterbegin', header);
-const carouselInner = document.querySelector('.carousel-inner');
+const carouselContainer = document.querySelector('#carousel-container')
+carouselContainer.insertAdjacentHTML('afterbegin', header)
 
 function slider() {
   let html = ''

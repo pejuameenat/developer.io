@@ -156,7 +156,6 @@ function movingSliders() {
   let index = 0
   btnLeft.addEventListener('click', function () {
     index = index > 0 ? index - 1 : 2
-    console.log(index);
     carouselInner.style.transform = `translate(${index * -33}%)`
   })
 

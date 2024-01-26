@@ -1,21 +1,22 @@
 import { information, offering, steps, testimonials } from './obj.js'
 
-const menu = document.querySelector('.menu');
-const navLists = document.querySelector('.nav-lists');
-const navList = document.querySelectorAll('.nav-list');
-const logo = document.querySelector('.intro-head');
-const image = document.querySelector('.display-image');
-const input = document.querySelector('.input');
-const cardContainer = document.getElementById('grid-container');
-const sectionOffer = document.querySelector('.offer');
-const signUp = document.querySelector('.sign-up');
-const footerSpan = document.querySelector('.footer-span');
-const allSections = document.querySelectorAll('.section-observer');
-const nav = document.querySelector('nav');
+const menu = document.querySelector('.menu')
+const navLists = document.querySelector('.nav-lists')
+const navList = document.querySelectorAll('.nav-list')
+const logo = document.querySelector('.intro-head')
+const image = document.querySelector('.display-image')
+const input = document.querySelector('.input')
+const cardContainer = document.getElementById('grid-container')
+const sectionOffer = document.querySelector('.offer')
+const signUp = document.querySelector('.sign-up')
+const footerSpan = document.querySelector('.footer-span')
+const allSections = document.querySelectorAll('.section-observer')
+const nav = document.querySelector('nav')
 const operationsTabContainer = document.querySelector(
   '.operations__tab-container'
-);
-const carouselInner = document.querySelector('.carousel-inner');
+)
+const carouselInner = document.querySelector('.carousel-inner')
+
 
 
 const date = new Date()
@@ -120,6 +121,7 @@ operationsTabContainer.addEventListener('click', function (e) {
 
   const operationsContent = document.querySelectorAll('.operations__content')
   operationsContent.forEach((op) => {
+    // console.log(op,i)
     op.classList.remove('operations__content--active')
   })
   if (!clicked) return

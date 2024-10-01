@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer.io</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="intro-head">
+        <a href="">Developers<span>.io</span></a>
+      </h1>
+      <nav>
+        <a href="#">
+          <img src="./images/hamburger.png" class="menu" alt="" />
+        </a>
+        <ul class="nav-lists hide">
+          <li class="nav-list">
+            <a href="#about" role="sroll" class="nav-link">About</a>
+          </li>
+          <li class="nav-list nav-list2">
+            <a href="#" class="nav-link">Language</a>
+            <div class="drop-down">
+              <ul class="languages">
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+              </ul>
+              <ul class="languages">
+                <li><a href="#">Go</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Kotlin</a></li>
+                <li><a href="#">Swift</a></li>
+                <li><a href="#">PHP</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-list" id="pair">
+            <a href="#section-pair" class="nav-link" role="sroll">Pair</a>
+          </li>
+          <ul class="forms">
+            <li class="nav-list">
+              <a href="./login.html" class="nav-link">Sign In</a>
+            </li>
+            <li class="nav-list" id="list-2">
+              <a href="./signup.html" class="nav-link sign-up">Sign Up</a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+      <img
+        src="./images/image-emily.jpg"
+        alt="display-photo"
+        class="display-image"
+      />
+    </div>
+    <section id="about">
+      <div class="container">
+        <div class="grid-container">
+          <div class="item-one">
+            <img src="./images/avatar.jpg" class="invert-out" alt="avatar" />
+            <img src="./images/edward.jpg" class="invert-out" alt="avatar" />
+            <img src="./images/elijah.jpg" class="invert-out" alt="avatar" />
+            <img
+              src="./images/image-emily.jpg"
+              class="invert-out"
+              alt="avatar"
+            />
+            <img
+              src="./images/testimony3.jpg"
+              class="invert-out"
+              alt="avartar"
+            />
+            <img src="./images/elijah.jpg" class="invert-out" alt="avatar" />
+          </div>
+          <div class="item-one item-2">
+            <img src="./images/image-emily.jpg" alt="" class="invert" />
+            <img src="./images/avatar.jpg" alt="avatar" class="invert" />
+            <img src="./images/edward.jpg" alt="avatar" class="invert" />
+            <img src="./images/elijah.jpg" alt="avatar" class="invert" />
+            <img src="./images/image-emily.jpg" alt="avatar" class="invert" />
+            <img src="./images/testimony3.jpg" alt="avatar" class="invert" />
+          </div>
+          <div class="item-two text">
+            <h1 class="intro">
+              Start your amazing journey in programming with a pair today.
+            </h1>
+            <p>
+              As a newbie in tech we understand the need for you to have an
+              accountabilty partner through your journey in tech! whether you
+              are going the self taught way or attending a bootcamp this is for
+              u.
+            </p>
+            <button class="pair">
+              <a href="#section-pair" role="sroll">Find a Pair</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="intro" class="section-observer">
+      <h2 id="intro-head">Our Purpose</h2>
+      <div id="flex">
+         <div class="overlap">
+        <img src="./images/herodev.jpg" alt="arrow" />
+      </div>
+      <div class="container container2">
+        <h2>Experience more together</h2>
+        <p>
+          Here at developers.io, we believe in achieving much more when you have
+          an accountabilty partner to share your challenges with, so take that
+          chance to accelerate your career path today.
+        </p>
+        <button>Explore</button>
+      </div>
+      </div>
+    </section>
+    <section class="section-observer" id="section-pair">
+      <div id="container">
+        <div class="inputs">
+          <input
+            type="text"
+            id="pair-input"
+            placeholder="Search language..."
+            class="input"
+            required
+          />
+        </div>
+        <div id="grid-container"></div>
+      </div>
+    </section>
+    <section class="purple section-observer">
+      <div class="container offer-container">
+        <h2>What We Offer?</h2>
+        <div class="flex">
+          <div class="overlap">
+            <img src="./images/developer.io-screenshot.jpg" alt="innovation" />
+          </div>
+          <div class="offer"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-observer" id="steps">
+      <!-- <div class="container"> -->
+        <div class="title">
+          <span>Operations</span>
+          <h4>Everything as simple as possible, just follow the steps provided.</h4>
+        </div>
+        <!-- operations -->
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1">
+               Connect with fellows
+            </button>
+            <button class="btn operations__tab operations__tab--2" data-tab="2" >
+               Discuss with mentors
+            </button>
+            <button class="btn operations__tab operations__tab--3" data-tab="3" >
+               Acquire knowledge
+            </button>
+          </div>
+          <hr>
+          <div class="operations__container">
+          </div>
+      </div>
+    </section>
+    <section class="section section-observer" id="carousel-container">
+      <div id="inner-container">
+        <div class="carousel-inner"></div>
+        <button class="arrow left-arr"><span>&larr;</span></button
+        ><button class="arrow right-arr"><span>&rarr;</span></button>
+      </div>
+    </section>
+    <footer class="section-observer">
+      <h4>The best time to join Developer.io is now</h4>
+      <a href="./signup.html" class="footer-a">Open your free account today!</a>
+      <div class="footer-wrapper">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Challenges</a></li>
+          <li><a href="#">Mentors</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Peers</a></li>
+        </ul>
+      </div>
+      <p id="footer-p">
+        &copy;<span class="footer-span"></span> Created by Aminat, All rights
+        reserved
+      </p>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developers.io</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <div class="overall-container">
+      <header>
+        <h1 class="intro-head"><a href="./index.html">Developers<span>.io</span></a></h1> 
+      </header>
+      <nav>
+        <ul>
+          <li class="list-item1"><a href="">Sign In</a></li>
+          <li class="list-item2"><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <h1 class="hero-head">Log in to your account</h1>
+        <p class="hero-intro">
+          Sign in to connect with fellows on the same learning journey as
+          yourself
+        </p>
+        <div class="login-options">
+          <button class="submit">
+            <a href=""
+              ><img src="./images/search.png" alt="" /> Sign in with Google</a
+            >
+          </button>
+          <button class="submit">
+            <a href=""
+              ><img src="./images/github-1.png" alt="" /> Sign in with
+              Facebook</a
+            >
+          </button>
+        </div>
+        <p class="divider">or</p>
+        <form>
+          <input
+            type="text"
+            name=""
+            placeholder="Username"
+            class="username"
+            required
+          />
+          <div class="password">
+            <input
+              type="password"
+              name=""
+              placeholder="Password"
+              class="pword"
+              required
+            /><img src="./images/visible.png"  alt="" class="visible" />
+            <p id="error-msg" class="hide"></p>
+          </div>
+          <!-- <p id="error-msg">Please input valid username and password</p> -->
+          <p>
+            By clicking 'Sign in' you agree to our <a href="#">terms</a> and our
+            <a href="#">Privacy Policy</a>
+          </p>
+          <button class="submit-form submit-btn">
+            <a href="" class="submit-form-a">Sign in</a>
+          </button>
+        </form>
+        <a href="#" class="forgot-pwd">Forgot Password?</a>
+      </div>
+      <div class="box">
+        <h1>You can log in with</h1>
+        <p>Username: JC/EF <br>Password: 1011/ 2022 respectively</p>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

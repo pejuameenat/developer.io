@@ -117,6 +117,7 @@ operationsTabContainer.addEventListener('click', function (e) {
   const tabs = document.querySelectorAll('.operations__tab')
   const clicked = e.target.closest('.operations__tab')
   tabs.forEach((tab) => {
+    //remove the class name from all
     tab.classList.remove('operations__tab--active')
   })
 
@@ -126,6 +127,7 @@ operationsTabContainer.addEventListener('click', function (e) {
     op.classList.remove('operations__content--active')
   })
   if (!clicked) return
+  //if it is the target element
   clicked.classList.add('operations__tab--active')
   document
     .querySelector(`.operations__content--${clicked.dataset.tab}`)

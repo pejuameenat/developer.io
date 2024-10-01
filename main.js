@@ -1,3 +1,4 @@
+//main js for the home page
 import { information, offering, steps, testimonials } from './obj.js'
 
 const menu = document.querySelector('.menu')

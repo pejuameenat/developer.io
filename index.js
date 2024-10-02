@@ -29,16 +29,23 @@ const createUsername = function (accs) {
 )}
 createUsername(users);
 
-const redirectToHomePage = function () {
+const redirectToHomePage = function (e) {
     //find the first acct that matches the username value inputed
-    currrentAcc = users.find(acc => acc.username === username.value)
-    if(currrentAcc?.pin === Number(password.value)){
+    //fixed redirect issue
+    if (e.target.TagName === 'BUTTON') {
+        e.preventDefault()
+    }
+   const currentAcc = users.find(acc =>  acc.username === username.value
+    )
+    
+    if(currentAcc?.pin === Number(password.value)){
         SubmitFormLink.setAttribute('href', "./index.html");
     }else{
         SubmitFormLink.setAttribute('href', "#")
         errorMsg.textContent = "Please input valid Username and password";
     }
 }
+// console.log(redirectToHomePage())
 submitBtn.addEventListener('click', redirectToHomePage)
 submitBtn.addEventListener('keyup', function(e){
     if(e.key === 'Enter')redirectToHomePage()

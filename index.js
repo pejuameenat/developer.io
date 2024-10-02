@@ -31,7 +31,7 @@ createUsername(users);
 
 const redirectToHomePage = function (e) {
     //find the first acct that matches the username value inputed
-    //fixed redirect issue
+    //prevent default behaviors of button in a form
     if (e.target.TagName === 'BUTTON') {
         e.preventDefault()
     }
